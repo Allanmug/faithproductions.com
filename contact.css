@@ -1,13 +1,14 @@
 * {
-  margin: 0 ;
+  margin: 0;
   padding: 0;
   font-family: "Times New Roman", Times, serif;
   align-content: center;
 }
 .header {
   width: 100%;
-  background-color: rgb(175, 175, 220);
-  background-position: center;
+  background-image: linear-gradient(rgb(4, 9, 30, 0.7), rgb(4, 9, 30, 0.7)),
+    url(images/back~3.png);
+  background-position: cover;
   position: relative;
 }
 nav {
@@ -67,14 +68,58 @@ nav img {
   flex-basis: 44%;
   border-radius: 10px;
   margin-bottom: 5%;
-  text-align: left;
-  background-color: rgb(183, 235, 244);
+  align-items: center;
+  background-image: linear-gradient(rgb(4, 9, 30, 0.7), rgb(4, 9, 30, 0.7)),
+    url(images/back2.jpeg);
   padding: 10px;
   cursor: pointer;
   display: flex;
   text-align: justify;
 }
+.text-bttn p {
+  padding-bottom: 20px;
+  color: #fff;
+}
 
+.text-bttn a {
+  display: inline-flex;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+}
+.text-bttn a:hover {
+  background-color: rgb(109, 109, 253);
+}
+.channel {
+  display: inline-flex;
+  padding-left: 5px;
+}
+.f1,
+.f2,
+.f3 {
+  padding-left: 20px;
+}
+.f1 p,
+.f2 p,
+.f3 p {
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+.f1 .fa {
+  color: #fff;
+  background-color: red;
+}
+.f2 .fa {
+  color: white;
+  background-color: green;
+}
+.f3 .fa {
+  color: white;
+  background-color: blue;
+}
 .ins-img {
   height: 250px;
   width: 250px;
@@ -82,8 +127,8 @@ nav img {
   margin-right: 30px;
   border-radius: 20%;
 }
-nav .fa{
-    display: none;
+nav .fa {
+  display: none;
 }
 @media (max-width: 700px) {
   .ins-img {
@@ -119,6 +164,31 @@ nav .fa{
 
   .nav-links ul {
     padding: 30px;
+  }
+  .instructor {
+    display: block;
+    align-content: center;
+  }
+  .ins-img {
+    margin-left: 30%;
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  .text-bttn a {
+    display: inline-flex;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 6px;
+    margin-left: 150%;
+  }
+  .f1,
+  .f2,
+  .f3 {
+    padding-left: 5px;
   }
 }
 .bio {
