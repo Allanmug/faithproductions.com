@@ -55,6 +55,13 @@
   .nav-links ul li:hover::after {
     width: 100%;
   }
+  .bimg{
+  padding-top: 500px;
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/image4.jpg);
+  position:;
+  } 
+
+
   .cta{
     margin: 100px auto;
     width:80%;
