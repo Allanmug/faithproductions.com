@@ -11,7 +11,7 @@
 
 
 .header {
-  min-height: 100vh;
+  min-height: 90vh;
   width: 100%;
   background-image: linear-gradient(rgb(4, 9, 30, 0.7), rgb(4, 9, 30, 0.7)),
     url(images/back~3.png);
@@ -74,7 +74,7 @@ nav img {
 }
 
 .text-box h1 {
-  font-size: 0px;
+  font-size: 35px;
 }
 
 .text-box p {
@@ -93,6 +93,7 @@ nav img {
   background: transparent;
   position: relative;
   cursor: pointer;
+  margin-top: 70px;
 }
 .click{
   background-color: rgb(36, 14, 199);
