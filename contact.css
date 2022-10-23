@@ -2,8 +2,13 @@
   margin: 0;
   padding: 0;
   font-family: "Times New Roman", Times, serif;
-  align-content: center;
 }
+
+body {
+  padding: 0%;
+  margin: 0%;
+}
+
 .header {
   width: 100%;
   background-image: linear-gradient(rgb(4, 9, 30, 0.7), rgb(4, 9, 30, 0.7)),
@@ -11,6 +16,7 @@
   background-position: cover;
   position: relative;
 }
+
 nav {
   display: flex;
   padding: 2% 6%;
@@ -54,16 +60,94 @@ nav img {
   width: 100%;
 }
 
+.bckimg {
+  background-image: linear-gradient(rgb(4, 9, 30, 0.7), rgb(4, 9, 30, 0.7)), url(images/stage.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+
+
+.videos video {
+
+
+  padding: 50px;
+  padding-right: 0%;
+  padding-left: 5%;
+}
+
+.tables tr td {
+  padding: 20px;
+  
+  color: #fff;
+}
+.tables tr td:hover {
+  padding: 20px;
+  width: 640px;
+  height:400px;
+  color: rgb(184, 13, 13);
+}
+.tables tr td p{
+padding-top: 0%;
+}
+
+@media screen and (max-width: 700px) {
+  video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tables tr td {
+    padding: 3px 3px;
+     
+    height: 100px;
+    width: 200px;
+
+
+
+  }
+}
+
 .content {
   width: 89%;
-  margin: auto;
+  margin-left: 50px;
   padding-top: 100px;
   text-align: center;
 }
+
 .content h3 {
   text-align: center;
   padding-bottom: 50px;
 }
+
+.bio {
+  color: white;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+}
+
+@media screen and (max-width: 700px) {
+  .bckimg {
+    background-image: linear-gradient(rgb(4, 9, 30, 0.7), rgb(4, 9, 30, 0.7)), url(images/cute.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .bio {
+
+    width: 100%;
+    height: 100%;
+
+
+  }
+}
+
 .instructor {
   flex-basis: 44%;
   border-radius: 10px;
@@ -72,10 +156,13 @@ nav img {
   background-image: linear-gradient(rgb(4, 9, 30, 0.7), rgb(4, 9, 30, 0.7)),
     url(images/back2.jpeg);
   padding: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
   cursor: pointer;
   display: flex;
   text-align: justify;
 }
+
 .text-bttn p {
   padding-bottom: 20px;
   color: #fff;
@@ -89,18 +176,22 @@ nav img {
   height: 50px;
   border-radius: 10px;
 }
+
 .text-bttn a:hover {
   background-color: rgb(109, 109, 253);
 }
+
 .channel {
   display: inline-flex;
   padding-left: 5px;
 }
+
 .f1,
 .f2,
 .f3 {
-  padding-left: 20px;
+  padding-left: 200px;
 }
+
 .f1 p,
 .f2 p,
 .f3 p {
@@ -108,18 +199,22 @@ nav img {
   font-weight: 600;
   text-align: center;
 }
+
 .f1 .fa {
   color: #fff;
   background-color: red;
 }
+
 .f2 .fa {
   color: white;
   background-color: green;
 }
+
 .f3 .fa {
   color: white;
   background-color: blue;
 }
+
 .ins-img {
   height: 250px;
   width: 250px;
@@ -127,9 +222,14 @@ nav img {
   margin-right: 30px;
   border-radius: 20%;
 }
+
 nav .fa {
   display: none;
 }
+.tables{
+  float: left;
+}
+
 @media (max-width: 700px) {
   .ins-img {
     height: 100px;
@@ -138,6 +238,12 @@ nav .fa {
     margin-right: 30px;
     border-radius: 20%;
   }
+
+  .content {
+    margin-left: 7%;
+    margin-right: 5%;
+  }
+
   .nav-links ul li {
     display: block;
   }
@@ -165,16 +271,19 @@ nav .fa {
   .nav-links ul {
     padding: 30px;
   }
+
   .instructor {
     display: block;
-    align-content: center;
+
   }
+
   .ins-img {
     margin-left: 30%;
     width: 150px;
     height: 100px;
     border-radius: 10px;
   }
+
   .text-bttn a {
     display: inline-flex;
     text-align: center;
@@ -185,19 +294,21 @@ nav .fa {
     font-size: 6px;
     margin-left: 150%;
   }
+
   .f1,
   .f2,
   .f3 {
     padding-left: 5px;
   }
 }
+
 .bio {
   flex-basis: 44%;
   border-radius: 10px;
   margin-bottom: 5%;
   border-color: black solid;
   padding: 10px;
-  text-align: justify;
+  text-align: center;
 }
 
 .cta {
@@ -211,16 +322,19 @@ nav .fa {
   text-align: center;
   padding: 100px 0;
 }
+
 .cta h1 {
   color: #fff;
   margin-bottom: 40px;
   padding: 0;
 }
+
 @media (max-width: 700px) {
   .cta h1 {
     font-size: 24px;
   }
 }
+
 .footer {
   width: 100%;
   text-align: center;
@@ -228,15 +342,18 @@ nav .fa {
   padding: 30px 0;
   background-color: rgb(2, 2, 15);
 }
+
 .footer h3 {
   margin-bottom: 25px;
   margin-top: 20px;
   text-decoration: #fff;
   font-weight: 600;
 }
+
 .footer p {
   color: #fff;
 }
+
 .icons .fa {
   color: #f44336;
   margin: 0 13px;
@@ -244,6 +361,7 @@ nav .fa {
   padding: 18px 0;
   size: 20px;
 }
+
 .fa-heart {
   color: #f44336;
 }
