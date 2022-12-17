@@ -45,12 +45,18 @@ nav img {
     position: relative;
 }
 
-.nav-links ul li a {
-    color: azure;
-    text-decoration: none;
-    font-size: 13px;
+.nav-links ul li a#activity {
+    background-color: aqua;
+    color: red;
+    font-weight: bold;
 }
 
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px;
+}
 .nav-links ul li::after {
     content: "";
     width: 0;
@@ -121,8 +127,17 @@ nav img {
 nav .fa {
     display: none;
 }
-
+   iframe {
+       padding: 10%;
+       width: 35%;
+       padding-top: 5%;
+       padding-bottom: 5%;
+   }
 @media (max-width: 700px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
     .text-box h1 {
         font-size: 30px;
     }
@@ -157,6 +172,12 @@ nav .fa {
 
     .nav-links ul {
         padding: 30px;
+    }
+    iframe{
+        padding: 25%;
+        width: 50%;
+        padding-top:5%;
+        padding-bottom: 5%;
     }
 }
 body{
